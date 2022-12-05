@@ -1,18 +1,111 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+
+const Logo = () => (
+  <svg
+    width="110"
+    height="32"
+    viewBox="0 0 119 39"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      id="mask0_1916_457"
+      maskUnits="userSpaceOnUse"
+      x="0"
+      y="2"
+      width="32"
+      height="32"
+    >
+      <path
+        d="M0 4C0 2.89543 0.895431 2 2 2H30C31.1046 2 32 2.89543 32 4V32C32 33.1046 31.1046 34 30 34H2C0.895431 34 0 33.1046 0 32V4Z"
+        fill="#D9D9D9"
+      />
+    </mask>
+    <g mask="url(#mask0_1916_457)">
+      <path
+        d="M32 33V4.41421C32 3.52331 30.9229 3.07714 30.2929 3.70711L1.70711 32.2929C1.07714 32.9229 1.52331 34 2.41421 34H31C31.5523 34 32 33.5523 32 33Z"
+        fill="white"
+        fillOpacity="0.25"
+      />
+    </g>
+    <mask
+      id="mask1_1916_457"
+      maskUnits="userSpaceOnUse"
+      x="0"
+      y="2"
+      width="32"
+      height="32"
+    >
+      <path
+        d="M0 4C0 2.89543 0.895431 2 2 2H30C31.1046 2 32 2.89543 32 4V32C32 33.1046 31.1046 34 30 34H2C0.895431 34 0 33.1046 0 32V4Z"
+        fill="#D9D9D9"
+      />
+    </mask>
+    <g mask="url(#mask1_1916_457)">
+      <g filter="url(#filter0_d_1916_457)">
+        <path
+          d="M0 33V4.41421C0 3.52331 1.07714 3.07714 1.70711 3.70711L32 34H1C0.447716 34 0 33.5523 0 33Z"
+          fill="white"
+        />
+      </g>
+    </g>
+    <path
+      d="M46.0227 7.72727H52.0909L58.5 23.3636H58.7727L65.1818 7.72727H71.25V31H66.4773V15.8523H66.2841L60.2614 30.8864H57.0114L50.9886 15.7955H50.7955V31H46.0227V7.72727ZM75.304 31V7.72727H84.4858C86.2509 7.72727 87.7547 8.06439 88.9972 8.73864C90.2396 9.4053 91.1866 10.3333 91.8381 11.5227C92.4972 12.7045 92.8267 14.0682 92.8267 15.6136C92.8267 17.1591 92.4934 18.5227 91.8267 19.7045C91.16 20.8864 90.1941 21.8068 88.929 22.4659C87.6714 23.125 86.1487 23.4545 84.3608 23.4545H78.5085V19.5114H83.5653C84.5123 19.5114 85.2926 19.3485 85.9062 19.0227C86.5275 18.6894 86.9896 18.2311 87.2926 17.6477C87.6032 17.0568 87.7585 16.3788 87.7585 15.6136C87.7585 14.8409 87.6032 14.1667 87.2926 13.5909C86.9896 13.0076 86.5275 12.5568 85.9062 12.2386C85.285 11.9129 84.4972 11.75 83.5426 11.75H80.2244V31H75.304ZM116.557 15.875H111.58C111.489 15.2311 111.303 14.6591 111.023 14.1591C110.742 13.6515 110.383 13.2197 109.943 12.8636C109.504 12.5076 108.996 12.2348 108.42 12.0455C107.852 11.8561 107.235 11.7614 106.568 11.7614C105.364 11.7614 104.314 12.0606 103.42 12.6591C102.527 13.25 101.833 14.1136 101.341 15.25C100.848 16.3788 100.602 17.75 100.602 19.3636C100.602 21.0227 100.848 22.4167 101.341 23.5455C101.841 24.6742 102.538 25.5265 103.432 26.1023C104.326 26.678 105.36 26.9659 106.534 26.9659C107.193 26.9659 107.803 26.8788 108.364 26.7045C108.932 26.5303 109.436 26.2765 109.875 25.9432C110.314 25.6023 110.678 25.1894 110.966 24.7045C111.261 24.2197 111.466 23.6667 111.58 23.0455L116.557 23.0682C116.428 24.1364 116.106 25.1667 115.591 26.1591C115.083 27.1439 114.398 28.0265 113.534 28.8068C112.678 29.5795 111.655 30.1932 110.466 30.6477C109.284 31.0947 107.947 31.3182 106.455 31.3182C104.379 31.3182 102.523 30.8485 100.886 29.9091C99.2576 28.9697 97.9697 27.6098 97.0227 25.8295C96.0833 24.0492 95.6136 21.8939 95.6136 19.3636C95.6136 16.8258 96.0909 14.6667 97.0455 12.8864C98 11.1061 99.2955 9.75 100.932 8.81818C102.568 7.87879 104.409 7.40909 106.455 7.40909C107.803 7.40909 109.053 7.59848 110.205 7.97727C111.364 8.35606 112.39 8.90909 113.284 9.63636C114.178 10.3561 114.905 11.2386 115.466 12.2841C116.034 13.3295 116.398 14.5265 116.557 15.875Z"
+      fill="white"
+    />
+    <defs>
+      <filter
+        id="filter0_d_1916_457"
+        x="-6"
+        y="-4.58789"
+        width="48"
+        height="46.5879"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dx="2" />
+        <feGaussianBlur stdDeviation="4" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_1916_457"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_1916_457"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+);
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: Logo,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/shuding/nextra-docs-template",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.com",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
   footer: {
-    text: 'Nextra Docs Template',
+    text: "Nextra Docs Template",
   },
-}
+};
 
-export default config
+export default config;

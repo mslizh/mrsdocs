@@ -2,6 +2,10 @@
   "index": "Introduction",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
+  "components": {
+    "title": "Components",
+    "type": "page"
+  },
   "about": {
     "title": "About",
     "type": "page"
